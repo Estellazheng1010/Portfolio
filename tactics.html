@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tactics | Estella Zheng</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">ESTELLA</a>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+      <a href="estella.html" data-i18n="navEstella">ESTELLA</a>
+      <a href="contact.html" data-i18n="navContact">CONTACT</a>
+      <button id="languageToggle" class="language-btn">中文</button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section detail-page tactics-page">
+      <p class="eyebrow">T — TACTICS</p>
+      <h1 data-i18n="tacticsTitle">Tactics</h1>
+      <p class="page-intro" data-i18n="tacticsIntro">
+        This section collects my planning proposals. You can click a cover to open a book-style reader and flip through the project pages.
+      </p>
+
+      <div class="tactics-grid tactics-grid-portrait">
+        <article class="tactics-card tactics-card-portrait" data-project="shanhe" tabindex="0" role="button" aria-label="Open project 1">
+          <div class="tactics-card-image">
+            <img src="images/tactics-covers/shanhe.jpg" alt="Murders on the Yangtze River Cross-cultural Communication Proposal cover" />
+          </div>
+          <div class="tactics-card-body">
+            <p class="tactics-card-number">01</p>
+            <h3 data-i18n="tacticProject1Title">Murders on the Yangtze River Cross-cultural Communication Proposal</h3>
+            <p data-i18n="tacticProject1Caption">A cross-cultural communication plan for a Chinese detective game, and one of my personal course assignments.</p>
+          </div>
+        </article>
+        <article class="tactics-card tactics-card-portrait" data-project="anta" tabindex="0" role="button" aria-label="Open project 2">
+          <div class="tactics-card-image">
+            <img src="images/tactics-covers/anta.jpg" alt="ANTA Kids IBP Plans Book cover" />
+          </div>
+          <div class="tactics-card-body">
+            <p class="tactics-card-number">02</p>
+            <h3 data-i18n="tacticProject2Title">ANTA Kids IBP Plans Book</h3>
+            <p data-i18n="tacticProject2Caption">A group project. I was mainly responsible for the communication plan part.</p>
+          </div>
+        </article>
+        <article class="tactics-card tactics-card-portrait" data-project="mondo" tabindex="0" role="button" aria-label="Open project 3">
+          <div class="tactics-card-image">
+            <img src="images/tactics-covers/mondo.jpg" alt="MONDO Business Plan cover" />
+          </div>
+          <div class="tactics-card-body">
+            <p class="tactics-card-number">03</p>
+            <h3 data-i18n="tacticProject3Title">MONDO Business Plan</h3>
+            <p data-i18n="tacticProject3Caption">A group project. I served as the project leader, and we created a virtual game plan.</p>
+          </div>
+        </article>
+        <article class="tactics-card tactics-card-portrait" data-project="unicom" tabindex="0" role="button" aria-label="Open project 4">
+          <div class="tactics-card-image">
+            <img src="images/tactics-covers/unicom.jpg" alt="China Unicom Animation Contest Proposal cover" />
+          </div>
+          <div class="tactics-card-body">
+            <p class="tactics-card-number">04</p>
+            <h3 data-i18n="tacticProject4Title">China Unicom Animation Contest Proposal</h3>
+            <p data-i18n="tacticProject4Caption">A group project. I wrote the marketing analysis part.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="tactics-grid tactics-grid-landscape">
+        <article class="tactics-card tactics-card-landscape" data-project="beer" tabindex="0" role="button" aria-label="Open project 5">
+          <div class="tactics-card-image">
+            <img src="images/tactics-covers/beer.jpg" alt="Beer Hop Adoption Marketing Proposal cover" />
+          </div>
+          <div class="tactics-card-body">
+            <p class="tactics-card-number">05</p>
+            <h3 data-i18n="tacticProject5Title">Beer Hop Adoption Marketing Proposal</h3>
+            <p data-i18n="tacticProject5Caption">A group project. I was mainly responsible for the marketing strategy.</p>
+          </div>
+        </article>
+        <article class="tactics-card tactics-card-landscape" data-project="guangxian" tabindex="0" role="button" aria-label="Open project 6">
+          <div class="tactics-card-image">
+            <img src="images/tactics-covers/guangxian.jpg" alt="Enlight Media Integration Analysis cover" />
+          </div>
+          <div class="tactics-card-body">
+            <p class="tactics-card-number">06</p>
+            <h3 data-i18n="tacticProject6Title">Enlight Media Integration Analysis</h3>
+            <p data-i18n="tacticProject6Caption">An analysis of the strategic planning of Enlight Media.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="page-navigation">
+        <a href="skills.html" class="page-nav-btn prev-btn">
+          <span data-i18n="prevLabel">Previous</span>
+          <strong data-i18n="prevSkills">← Skills</strong>
+        </a>
+      
+        <a href="experience.html" class="page-nav-btn next-btn">
+          <span data-i18n="nextLabel">Next</span>
+          <strong data-i18n="nextExperience">Experience →</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div id="tacticsReader" class="tactics-reader hidden" aria-hidden="true">
+    <div id="tacticsReaderBackdrop" class="tactics-reader-backdrop"></div>
+
+    <div class="tactics-reader-panel" role="dialog" aria-modal="true">
+      <div class="tactics-reader-topbar">
+        <div>
+          <p id="readerMeta" class="reader-meta">01 / 01</p>
+          <h2 id="readerTitle">Project Title</h2>
+        </div>
+        <div class="reader-actions">
+          <button id="readerZoom" class="reader-icon-btn" type="button" aria-label="Toggle fullscreen">⤢</button>
+          <button id="readerClose" class="reader-icon-btn" type="button" aria-label="Close">×</button>
+        </div>
+      </div>
+
+      <div class="tactics-book">
+        <button id="readerPrev" class="reader-turn reader-turn-prev" type="button" aria-label="Previous page">‹</button>
+        <div id="readerPageFrame" class="reader-page-frame">
+          <img id="readerPage" src="" alt="Project page" />
+        </div>
+        <button id="readerNext" class="reader-turn reader-turn-next" type="button" aria-label="Next page">›</button>
+      </div>
+
+      <div class="reader-bottom">
+        <p id="readerCaption">Click the arrows or use keyboard arrow keys to turn pages.</p>
+        <div class="reader-progress">
+          <div id="readerProgressBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Estella Zheng. Welcome to my world.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

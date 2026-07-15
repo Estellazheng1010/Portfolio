@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab | Estella Zheng</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">ESTELLA</a>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+      <a href="estella.html" data-i18n="navEstella">ESTELLA</a>
+      <a href="contact.html" data-i18n="navContact">CONTACT</a>
+      <button id="languageToggle" class="language-btn">中文</button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section detail-page lab-page">
+      <p class="eyebrow">L — LAB</p>
+      <h1 data-i18n="labTitle">Lab</h1>
+      <p class="page-intro" data-i18n="labIntro">
+        A working shelf of course projects, data stories, research pages, and visual experiments. Each piece shows one tool or method I have actually used.
+      </p>
+
+      <div class="lab-project-grid">
+        <a class="lab-project-card" href="https://estellazheng1010.github.io/imDb-Sentiment-lab/" target="_blank" rel="noopener">
+          <div class="lab-card-image">
+            <img src="images/lab-covers/imdb.jpg" alt="IMDb sentiment analysis dashboard preview" />
+          </div>
+          <div class="lab-card-body">
+            <p class="lab-card-index">01</p>
+            <h3 data-i18n="labProject1Title">IMDb Sentiment Lab</h3>
+            <p data-i18n="labProject1Text">A data science course project that uses language models and NLP methods to analyze movie review sentiment.</p>
+            <span data-i18n="labProject1Tag">Python · NLP · GitHub Pages</span>
+          </div>
+        </a>
+
+        <a class="lab-project-card" href="https://estellazheng1010.github.io/group9project/" target="_blank" rel="noopener">
+          <div class="lab-card-image">
+            <img src="images/lab-covers/female-lead.jpg" alt="Advanced data journalism project preview" />
+          </div>
+          <div class="lab-card-body">
+            <p class="lab-card-index">02</p>
+            <h3 data-i18n="labProject2Title">Are Hit Female-Led Dramas Really Female-Led?</h3>
+            <p data-i18n="labProject2Text">An advanced data journalism project looking at whether popular “big heroine” dramas truly give women narrative power.</p>
+            <span data-i18n="labProject2Tag">Data journalism · Web story</span>
+          </div>
+        </a>
+
+        <a class="lab-project-card" href="https://public.tableau.com/app/profile/estella.zheng/viz/Group9_17432537132670/OurFinalStory" target="_blank" rel="noopener">
+          <div class="lab-card-image">
+            <img src="images/lab-covers/tableau.jpg" alt="Tableau data visualization project preview" />
+          </div>
+          <div class="lab-card-body">
+            <p class="lab-card-index">03</p>
+            <h3 data-i18n="labProject3Title">Data Journalism & Visualization Final Story</h3>
+            <p data-i18n="labProject3Text">A Tableau-based final project that turns a data story into an interactive visual narrative.</p>
+            <span data-i18n="labProject3Tag">Tableau · Visual storytelling</span>
+          </div>
+        </a>
+
+        <a class="lab-project-card" href="https://estellazheng1010.github.io/qualitative-study/" target="_blank" rel="noopener">
+          <div class="lab-card-image">
+            <img src="images/lab-covers/qualitative.jpg" alt="Qualitative research coding project preview" />
+          </div>
+          <div class="lab-card-body">
+            <p class="lab-card-index">04</p>
+            <h3 data-i18n="labProject4Title">Study Plog Qualitative Lab</h3>
+            <p data-i18n="labProject4Text">A qualitative methods paper rebuilt as a research page, showing interview design, NVivo coding, and theory building.</p>
+            <span data-i18n="labProject4Tag">NVivo · Qualitative research</span>
+          </div>
+        </a>
+
+        <a class="lab-project-card" href="https://wuj70556.wixsite.com/my-site-1" target="_blank" rel="noopener">
+          <div class="lab-card-image">
+            <img src="images/lab-covers/cucers.jpg" alt="The Cucers convergent media reporting project preview" />
+          </div>
+          <div class="lab-card-body">
+            <p class="lab-card-index">05</p>
+            <h3 data-i18n="labProject5Title">The Cucers</h3>
+            <p data-i18n="labProject5Text">A convergent media reporting project built as a Wix site, combining topic planning, web editing, and visual presentation.</p>
+            <span data-i18n="labProject5Tag">Wix · Convergent reporting</span>
+          </div>
+        </a>
+
+        <button class="lab-project-card lab-project-button" type="button" data-open-web-image>
+          <div class="lab-card-image lab-card-image-web">
+            <img src="images/lab-covers/web-cover.jpg" data-fallbacks="images/web.jpg,images/web.png,images/web.jpeg,images/web.webp" alt="Digital media marketing website design preview" />
+          </div>
+          <div class="lab-card-body">
+            <p class="lab-card-index">06</p>
+            <h3 data-i18n="labProject6Title">Digital Media Marketing Website Design</h3>
+            <p data-i18n="labProject6Text">A long-form website layout made with Photoshop, focused on visual rhythm, page structure, and brand feeling.</p>
+            <span data-i18n="labProject6Tag">Photoshop · Web design</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="page-navigation">
+        <a href="experience.html" class="page-nav-btn prev-btn">
+          <span data-i18n="backLabel">Back</span>
+          <strong data-i18n="backExperience">← Experience</strong>
+        </a>
+      
+        <a href="links.html" class="page-nav-btn next-btn">
+          <span data-i18n="nextLabel">Next</span>
+          <strong data-i18n="nextLinks">Links →</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div id="webImageModal" class="web-image-modal hidden" aria-hidden="true">
+    <div id="webImageBackdrop" class="web-image-backdrop"></div>
+    <div class="web-image-panel" role="dialog" aria-modal="true" aria-labelledby="webImageTitle">
+      <div class="web-image-topbar">
+        <div>
+          <p data-i18n="webViewerLabel">Photoshop website design</p>
+          <h2 id="webImageTitle" data-i18n="webViewerTitle">Full layout preview</h2>
+        </div>
+        <div class="web-image-actions">
+          <button id="webZoomOut" type="button" aria-label="Zoom out">−</button>
+          <button id="webZoomReset" type="button" aria-label="Reset zoom">100%</button>
+          <button id="webZoomIn" type="button" aria-label="Zoom in">+</button>
+          <button id="webImageClose" type="button" aria-label="Close">×</button>
+        </div>
+      </div>
+      <div id="webImageStage" class="web-image-stage">
+        <img id="webImageFull" src="images/web.png" data-fallbacks="images/web.png,images/web.jpeg,images/web.webp,images/lab-covers/web-cover.jpg" alt="Full digital media marketing website design" />
+      </div>
+      <p class="web-image-hint" data-i18n="webViewerHint">Drag to move. Use + / − to zoom. Press Esc to close.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Estella Zheng. Welcome to my world.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

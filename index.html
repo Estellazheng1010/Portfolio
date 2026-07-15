@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Estella Zheng</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo">ESTELLA</a>
+
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+      <a href="estella.html" data-i18n="navEstella">ESTELLA</a>
+      <a href="contact.html" data-i18n="navContact">CONTACT</a>
+      <button id="languageToggle" class="language-btn">中文</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME Hero -->
+    <section class="home-hero">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="heroEyebrow">Like an apple, simple but not want to be usual</p>
+
+        <h1 data-i18n="heroTitle">Hi, I’m Estella Zheng.</h1>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          A communication student exploring digital marketing, brand strategy and
+          interactive media.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="estella.html" class="primary-btn" data-i18n="enterEstella">
+            Enter ESTELLA
+          </a>
+          <a href="resume-cn .pdf" download class="secondary-btn" data-i18n="downloadResume">
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Apple Button -->
+      <div class="apple-area">
+        <button class="apple-button" id="appleButton" aria-label="Open photo album">
+          <span class="apple-leaf"></span>
+        </button>
+
+        <p class="apple-hint" data-i18n="appleHint">
+          Click the apple to open my photo album.
+        </p>
+      </div>
+    </section>
+
+  
+  </main>
+
+  <!-- Photo Album Modal -->
+  <div class="album-modal hidden" id="albumModal">
+    <div class="album-backdrop" id="albumBackdrop"></div>
+
+    <div class="album-content">
+      <button class="album-close" id="albumClose" aria-label="Close photo album">
+        ×
+      </button>
+
+      <div class="album-header">
+        <p class="eyebrow" data-i18n="albumEyebrow">Photo Album</p>
+        <h2 data-i18n="albumTitle">A few pieces of my life</h2>
+      </div>
+
+      <div class="album-viewer">
+        <button class="album-arrow" id="prevPhoto" aria-label="Previous photo">
+          ‹
+        </button>
+
+        <div class="album-photo-frame">
+          <img id="albumImage" src="images/1.jpg" alt="Estella photo" />
+        </div>
+
+        <button class="album-arrow" id="nextPhoto" aria-label="Next photo">
+          ›
+        </button>
+      </div>
+
+      <div class="album-footer">
+        <p id="albumCounter">1 / 4</p>
+
+        <div class="album-dots" id="albumDots">
+          <button class="album-dot active" data-index="0"></button>
+          <button class="album-dot" data-index="1"></button>
+          <button class="album-dot" data-index="2"></button>
+          <button class="album-dot" data-index="3"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Estella Zheng. Welcome to my world.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
